@@ -1,3 +1,29 @@
-languageCode = "en-us"
-title = "My New Hugo Site"
-baseURL = "http://example.org/"
+baseurl = "https://jodev.net" # Controls base URL
+languageCode = "en-US" # Controls html lang attribute
+title = "Gopher johwanghee" # Homepage title and page title suffix
+paginate = 5 # Number of posts to show before paginating
+
+enableRobotsTXT = true # Suggested, enable robots.txt file
+googleAnalytics = "" # Optional, add tracking Id for analytics
+disqusShortname = "" # Optional, add Disqus shortname for comments
+SectionPagesMenu = "main" # Enable menu system for lazy bloggers
+
+[params]
+  description = "johwanghee's tech blog" # Suggested, controls default description meta
+  author = "johwanghee" # Optional, controls author name display on posts
+  hide_author = false # Optional, set true to hide author name on posts
+  show_menu = true # Optional, set true to enable section menu
+  powered_by = false # Optional, set false to disable credits
+  images = [] # Suggested, adds default OpenGraph image
+
+[menu]
+  [[menu.main]]
+    name = "Tags"
+    weight = 1
+    identifier = "tags"
+    url = "/tags"
+  [[menu.main]]
+    name = "About"
+    weight = 2
+    identifier = "about"
+    url = "/about/"
